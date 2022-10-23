@@ -1,0 +1,17 @@
+<h1 class="pb-4">Explore Latest</h1>
+<div class="row">
+    <% if(recipes!=''){ %>
+        <% recipes.forEach(recipe=>{ %>
+    <div class="card col-lg-2 category-card" style="width: 14rem; padding: 10px;">
+        <a href="/recipe/<%= recipe._id %>" class="latest-link">
+            <img src="/uploads/<%= recipe.image %>" class="card-img-top latest-img--large" alt="recipe.name">
+            <div class="card-body">
+                <p class="card-text"><%= recipe.name %></p>
+            </div>
+        </a>
+    </div>
+    <% }) %>
+    <% } else {%>
+        <p>No items found</p>
+        <% } %>
+</div>

@@ -1,0 +1,61 @@
+<div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="loginmodalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content px-4">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginmodalLabel">Login </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form method="post" action="/login">
+        <div class="modal-body">
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-control" id="login_username" name="username" minlength="8">
+          
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="login_password" name="password" minlength="8">
+        </div>
+       
+        </div>
+       
+        <div class="mb-3 d-grid gap-2">
+            <button type="submit" class="btn btn-primary">Login</button>
+          </div>
+  </form>
+      </div>
+    </div>
+  </div>
+
+
+  
+
+<!-- register/signUp Modal -->
+<div class="modal fade" id="signupmodal" tabindex="-1" aria-labelledby="signupmodalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content px-4">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupmodalLabel">Sign Up </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+  
+        <form action="/register" method="POST">
+        <div class="modal-body">
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-control" id="username" name="username" minlength="8">
+          
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" name="password" minlength="8">
+        </div>
+       
+        </div>
+        <div class="mb-3 d-grid gap-2">
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+          </div>
+  </form>
+      </div>
+    </div>
+  </div>

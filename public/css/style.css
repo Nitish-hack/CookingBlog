@@ -1,0 +1,77 @@
+:root{
+    --bs-font-sans-serif:"Rubik",sans-serif;
+}
+
+body{
+background: url("/img/i-like-food.svg");
+background-color: rgb(243,243,243);
+padding: 0 130px;
+}
+.container{
+    max-width: 1530px;
+}
+
+/* categories section styling */
+.category-img{
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
+    /* width: 100px; */
+}
+
+.category-card{
+    padding: 7px;
+    width: 12rem;
+    text-align: center;
+    border: none;
+    transition: all 250ms;
+   
+}
+.category-card:hover{
+    transform: scale(1.1);
+}
+
+/* latest section */
+.latest-img--large{
+    height: 330px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
+    /* width: 100px; */
+}
+
+.latest-link{
+    text-decoration: none;
+    color: black;
+ 
+}
+
+/* modal styling */
+.modal-dialog{
+    margin-top: 20vh;
+}
+
+
+/* buttons styling */
+.btn-explore{
+    background-color: #cebbdb;
+    border: 2px solid  #9b57c6;
+    box-shadow: -5px 5px gray 
+   
+}
+.btn-explore:hover{
+color:white;
+    background-color: #9a68b9;
+    border: 2px solid  #9b57c6;
+    box-shadow: none;
+}
+.btn-random{
+    background-color: pink;
+    border: 2px solid  rgb(252, 169, 183);
+    box-shadow: -5px 5px gray 
+}
+.btn-random:hover{
+    color:white;
+    background-color: rgb(255, 139, 159);
+    border: 2px solid  rgb(252, 169, 183);
+    box-shadow: none;
+    }
